@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevMark ia | Programando o sucesso do seu negócio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo" aria-label="DevMark ia">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACW0lEQVR4nO2aP0gUURDHfzs+jX0hC0F4RIIiGhJLCwpRS8UKuiUhGwsbhRRCMaFdIlalhaCBIIoghaKyEBEl2okGLSgFQQ5E4wfPjZM0/M2+uqr7uyc2Z2zu7O7szO+573vfOed09gG8MVihwDPgKlk7Ty+x1nIL8AJYj76eAtxSY0Ib1WyCwCKgApgDXqfAQcA3J7vYeADwAxqfrYDsHbMRj7AqCtpPPDwGnmf9dIoTYAq8+N9gGCCfiqQJ0ZjNiGk5/gVIR+UCYJk4X6LbwDXgeXGKRS24DnyXbMkKvO4CjKYm9hyAO0L9oCNgFRSb1HMA7i7sg54ClyH21X4X6fcQO4X1ShUmYqc+ka8IvRE4F9QJxm4KrUEN+E+glv83gKdI7gZQsnUloPWqXHgfdXGZBzdS3FpPWAZcEHg7LLIN9Wj7VNgBfJS1QGdT/sytl49Fc/lrOKoNpkglAZV8FqDQTWt3vN7UBsoMSAbq/l9V9BCLLgBOsDdtHcWglHCAWvhwValCfPzGKZPJQ4HOO1UUXomUOqwOqP1Xr79I6c9P5OyCxVrCbyXKZvT0XWy2C2Z9E0ML3bY9JgcowPhJXrNft+fFYnEQ2PCCO2f+q1iUoiAdpm4mUk5sAvV1oGbnKWnQTMgUoWmZaC1P3wsEmlr4UoqrscgT4ZdbQvlLR9yCU+Q2XtY9GUtBoe3IH5wJioDuY4etqBnsCboA5t7Gr3DTX37YDWcULHD46Ryv8CrmVF62j8HGgIRP2ST9dpOsPxyipzmoQ0wzrbX5xpN7/FTuH6Rfdbd5OhXLqEFa6fhaij6Wl2VnzAiMTZGgrVGFGb9uzcTgLyFODa4YQD0kJfsnzzQBMRIJZnFYGN58ISLJ3DM9dlkAzli+H7j+kYLQLeM7NaaH2kP8AvRu7RGIV2+52MN5Yl/VAxvNA69olnPoSZkKOLNA7+YIa3RrYpmkDDzuZ7aat5cNbOCM2fmNdtU5A4yRNG21aVlDLS4Btmba2S5Q0vATS95+r/0HLncAogC5xTMAAAAASUVORK5CYII=" alt="Logotipo DevMark ia">
+          <span class="logo-text">DevMark <span>ia</span></span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li class="dropdown">
+              <a href="#especialidades">Especialidades</a>
+              <div class="dropdown-menu" id="especialidades">
+                <a href="marketing.html">Marketing Digital</a>
+                <a href="desenvolvimento.html">Desenvolvimento &amp; IA</a>
+              </div>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <a class="btn-gradient" href="contato.html">Agendar Consulta</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-darker">
+        <div class="container two-column">
+          <div>
+            <p class="badge">Arquitetos de Soluções Digitais</p>
+            <h1 class="headline">Seu concorrente está crescendo online. E você?</h1>
+            <p class="lead">A Auditoria Digital Gratuita revela os gargalos invisíveis e o roteiro para destravar novos clientes em até 14 dias. Tecnologia + estratégia para programar o crescimento.</p>
+          </div>
+          <form class="hero-form" aria-labelledby="hero-form-title"
+            data-formsubmit="contato@devmarkia.com.br"
+            data-subject="Auditoria Digital - Homepage"
+            data-success="Recebemos sua solicitação! Retornaremos com o diagnóstico inicial em até 24h úteis."
+            data-error="Não foi possível enviar agora. Fale conosco pelo WhatsApp ou tente novamente.">
+            <h2 id="hero-form-title">Quero minha Auditoria Digital Gratuita</h2>
+            <input type="hidden" name="origem" value="Homepage - Auditoria Gratuita">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Como devemos te chamar?" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+            <label for="canal">Site ou Instagram</label>
+            <input type="text" id="canal" name="canal" placeholder="https:// ou @perfil" required>
+            <button type="submit" class="btn-gradient">Quero minha auditoria gratuita</button>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section-light">
+        <div class="container">
+          <h2 class="section-title">Como funciona a Auditoria</h2>
+          <p class="section-subtitle">Metodologia clara para eliminar achismos e destravar ações que geram receita.</p>
+          <div class="grid-three">
+            <div class="card-light process-step">
+              <span class="badge">1. Diagnóstico</span>
+              <strong>A Auditoria</strong>
+              <p>Mapeamos presença digital, funil e pontos cegos com análise técnica e leitura estratégica do comportamento do público.</p>
+            </div>
+            <div class="card-light process-step">
+              <span class="badge">2. Blueprint</span>
+              <strong>Plano de Ação</strong>
+              <p>Você recebe um plano priorizado com recursos, prazos e impacto estimado para acertar primeiro no que traz retorno real.</p>
+            </div>
+            <div class="card-light process-step">
+              <span class="badge">3. Parceria</span>
+              <strong>Implementação</strong>
+              <p>Se fizer sentido, nossos departamentos entram em modo sprint para implementar marketing, tecnologia e IA de forma integrada.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dark">
+        <div class="container">
+          <h2 class="section-title">Nossos Departamentos de Expertise</h2>
+          <p class="section-subtitle">Do crescimento ao código: unidades especializadas que falam a mesma língua de resultado.</p>
+          <div class="department-grid">
+            <article class="department-card marketing">
+              <span class="badge">Departamento Verde</span>
+              <h3>Marketing Digital Estratégico</h3>
+              <p>Captação previsível com neuromarketing, dados e growth. Campanhas, conteúdo e automações alinhadas ao seu funil.</p>
+              <a href="marketing.html">Descobrir o plano verde &rarr;</a>
+            </article>
+            <article class="department-card dev">
+              <span class="badge">Departamento Tech</span>
+              <div class="department-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5">
+                  <rect x="6" y="10" width="36" height="24" rx="4"></rect>
+                  <line x1="6" y1="18" x2="42" y2="18"></line>
+                  <path d="M18 26l-4 4 4 4"></path>
+                  <path d="M30 26l4 4-4 4"></path>
+                  <circle cx="24" cy="32" r="2.8"></circle>
+                </svg>
+              </div>
+              <h3 class="highlight-neon">Desenvolvimento &amp; IA</h3>
+              <p>Código sob medida, automações inteligentes e IA aplicada para escalar operações, reduzir custos e gerar novas receitas.</p>
+              <a href="desenvolvimento.html">Explorar soluções tech &rarr;</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-light">
+        <div class="container two-column">
+          <div>
+            <h2 class="section-title">Nossa Filosofia</h2>
+            <p>"Tecnologia sem estratégia é código caro. Estratégia sem execução vira PowerPoint." Na DevMark ia, marketing, desenvolvimento e inteligência artificial operam como um só organismo para gerar crescimento mensurável.</p>
+          </div>
+          <div class="card-light">
+            <p><strong>Arquitetura digital completa:</strong> analisamos, prototipamos, desenvolvemos e otimizamos continuamente cada etapa para garantir retorno sobre investimento.</p>
+            <p><strong>Equipe híbrida:</strong> estrategistas, engenheiros de software e cientistas de dados trabalhando com frameworks ágeis e indicadores claros.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-darker">
+        <div class="container two-column">
+          <div>
+            <h2 class="section-title">Pronto para programar seu sucesso?</h2>
+            <p class="section-subtitle">Reserve sua Auditoria Digital Gratuita e descubra exatamente onde acelerar hoje.</p>
+          </div>
+          <div>
+            <a href="contato.html" class="btn-gradient">Agendar Consulta</a>
+            <p class="cta-note">Respostas em até 24h úteis. Sem compromisso, com insights práticos.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container footer-grid">
+          <div>
+            <div class="logo">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACW0lEQVR4nO2aP0gUURDHfzs+jX0hC0F4RIIiGhJLCwpRS8UKuiUhGwsbhRRCMaFdIlalhaCBIIoghaKyEBEl2okGLSgFQQ5E4wfPjZM0/M2+uqr7uyc2Z2zu7O7szO+573vfOed09gG8MVihwDPgKlk7Ty+x1nIL8AJYj76eAtxSY0Ib1WyCwCKgApgDXqfAQcA3J7vYeADwAxqfrYDsHbMRj7AqCtpPPDwGnmf9dIoTYAq8+N9gGCCfiqQJ0ZjNiGk5/gVIR+UCYJk4X6LbwDXgeXGKRS24DnyXbMkKvO4CjKYm9hyAO0L9oCNgFRSb1HMA7i7sg54ClyH21X4X6fcQO4X1ShUmYqc+ka8IvRE4F9QJxm4KrUEN+E+glv83gKdI7gZQsnUloPWqXHgfdXGZBzdS3FpPWAZcEHg7LLIN9Wj7VNgBfJS1QGdT/sytl49Fc/lrOKoNpkglAZV8FqDQTWt3vN7UBsoMSAbq/l9V9BCLLgBOsDdtHcWglHCAWvhwValCfPzGKZPJQ4HOO1UUXomUOqwOqP1Xr79I6c9P5OyCxVrCbyXKZvT0XWy2C2Z9E0ML3bY9JgcowPhJXrNft+fFYnEQ2PCCO2f+q1iUoiAdpm4mUk5sAvV1oGbnKWnQTMgUoWmZaC1P3wsEmlr4UoqrscgT4ZdbQvlLR9yCU+Q2XtY9GUtBoe3IH5wJioDuY4etqBnsCboA5t7Gr3DTX37YDWcULHD46Ryv8CrmVF62j8HGgIRP2ST9dpOsPxyipzmoQ0wzrbX5xpN7/FTuH6Rfdbd5OhXLqEFa6fhaij6Wl2VnzAiMTZGgrVGFGb9uzcTgLyFODa4YQD0kJfsnzzQBMRIJZnFYGN58ISLJ3DM9dlkAzli+H7j+kYLQLeM7NaaH2kP8AvRu7RGIV2+52MN5Yl/VAxvNA69olnPoSZkKOLNA7+YIa3RrYpmkDDzuZ7aat5cNbOCM2fmNdtU5A4yRNG21aVlDLS4Btmba2S5Q0vATS95+r/0HLncAogC5xTMAAAAASUVORK5CYII=" alt="Logotipo DevMark ia">
+              <span class="logo-text">DevMark <span>ia</span></span>
+            </div>
+            <p class="section-subtitle">Programando o sucesso do seu negócio com marketing, desenvolvimento e inteligência artificial.</p>
+          </div>
+          <div>
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Especialidades</h4>
+            <ul>
+              <li><a href="marketing.html">Marketing Digital</a></li>
+              <li><a href="desenvolvimento.html">Desenvolvimento &amp; IA</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contato</h4>
+            <ul>
+              <li>Email: <a href="mailto:contato@devmarkia.com.br">contato@devmarkia.com.br</a></li>
+              <li>WhatsApp: <a href="https://wa.me/5516991702781" target="_blank" rel="noopener">+55 16 99170-2781</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">&copy; <span id="current-year"></span> DevMark ia. Todos os direitos reservados.</div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
