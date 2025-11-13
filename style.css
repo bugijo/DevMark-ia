@@ -11,12 +11,8 @@
   --color-accent-green-dark: #64c847;
   --color-accent-blue: #1c3d73;
   --color-accent-blue-dark: #0d1f47;
-  --color-accent-orange: #ff6b00;
-  --color-accent-orange-glow: rgba(255, 107, 0, 0.38);
-  --color-text-dark: #05070e;
-  --color-marketing-surface: #f7fffb;
-  --color-marketing-surface-alt: #ffffff;
-  --texture-tech-grid: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27200%27%20height%3D%27200%27%20viewBox%3D%270%200%20200%20200%27%3E%0A%20%20%3Cg%20fill%3D%27none%27%20stroke%3D%27%231a5dff%27%20stroke-width%3D%270.6%27%20opacity%3D%270.25%27%3E%0A%20%20%20%20%3Cpath%20d%3D%27M0%20100%20L100%200%20L200%20100%20L100%20200%20Z%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M0%200%20H200%20M0%20200%20H200%20M0%200%20V200%20M200%200%20V200%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20fill%3D%27none%27%20stroke%3D%27%23ff6b00%27%20stroke-width%3D%270.8%27%20opacity%3D%270.35%27%3E%0A%20%20%20%20%3Cpath%20d%3D%27M0%20160%20L200%2040%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M0%2040%20L200%20160%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%27100%27%20cy%3D%27100%27%20r%3D%2765%27/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E");
+  --color-accent-orange: #f4a027;
+  --color-accent-orange-glow: rgba(244, 160, 39, 0.35);
   --color-border: rgba(134, 181, 255, 0.14);
   --color-shadow: rgba(3, 10, 28, 0.55);
   --font-primary: 'Poppins', 'Segoe UI', sans-serif;
@@ -167,12 +163,6 @@ nav a:focus {
   border: none;
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.btn-gradient[disabled] {
-  cursor: not-allowed;
-  opacity: 0.65;
-  box-shadow: none;
 }
 
 .btn-gradient:hover,
@@ -342,21 +332,6 @@ nav a:focus {
   resize: vertical;
 }
 
-.form-feedback {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--color-text-muted);
-  min-height: 1.35rem;
-}
-
-.form-feedback.is-success {
-  color: var(--color-accent-green);
-}
-
-.form-feedback.is-error {
-  color: #ff6b6b;
-}
-
 .process-step {
   display: grid;
   gap: 0.75rem;
@@ -423,43 +398,13 @@ nav a:focus {
 }
 
 .department-card.dev {
-  background: linear-gradient(145deg, rgba(10, 32, 66, 0.92), rgba(6, 14, 32, 0.95));
-  border: 1px solid rgba(255, 107, 0, 0.4);
-  box-shadow: 0 30px 60px rgba(255, 107, 0, 0.18);
+  background: linear-gradient(140deg, rgba(28, 61, 115, 0.85), rgba(8, 24, 56, 0.95));
+  border: 1px solid rgba(44, 122, 215, 0.35);
 }
 
 .department-card.dev .badge {
-  background: rgba(255, 107, 0, 0.18);
-  color: rgba(255, 200, 160, 0.95);
-}
-
-.department-card.dev h3 {
+  background: rgba(244, 160, 39, 0.2);
   color: var(--color-accent-orange);
-}
-
-.department-card.dev a {
-  color: var(--color-accent-orange);
-}
-
-.department-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-}
-
-.department-card.dev .department-icon {
-  background: rgba(255, 107, 0, 0.16);
-  box-shadow: 0 18px 35px rgba(255, 107, 0, 0.22);
-}
-
-.department-card.dev .department-icon svg {
-  width: 28px;
-  height: 28px;
-  stroke: var(--color-accent-orange);
 }
 
 .badge {
@@ -735,100 +680,45 @@ nav a:focus {
 
 /* Marketing page accents */
 .marketing-hero {
-  background: var(--color-marketing-surface);
-  color: var(--color-text-dark);
-  position: relative;
-  z-index: 0;
-}
-
-.marketing-hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(51, 255, 153, 0.28), transparent 55%),
-              radial-gradient(circle at 85% 10%, rgba(0, 116, 217, 0.12), transparent 45%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.marketing-hero .container {
-  position: relative;
-  z-index: 1;
+  background: linear-gradient(135deg, rgba(14, 34, 26, 0.95), rgba(18, 48, 34, 0.92));
+  color: var(--color-text);
 }
 
 .marketing-hero .headline {
-  color: var(--color-text-dark);
-}
-
-.marketing-hero .lead {
-  color: rgba(5, 7, 14, 0.7);
-}
-
-.marketing-hero .badge {
-  background: rgba(51, 255, 153, 0.18);
-  color: #0a7c4c;
+  color: var(--color-text);
 }
 
 .marketing-hero .card-light {
-  background: var(--color-marketing-surface-alt);
-  border: 1px solid rgba(51, 255, 153, 0.35);
-  color: var(--color-text-dark);
-  box-shadow: 0 35px 65px rgba(6, 63, 40, 0.12);
+  background: rgba(17, 37, 54, 0.78);
+  border: 1px solid rgba(155, 255, 88, 0.22);
 }
 
-.marketing-hero .card-light h3,
-.marketing-hero .card-light strong {
-  color: var(--color-text-dark);
+.marketing-hero .lead {
+  color: var(--color-text-muted);
 }
 
-.marketing-hero .card-light p,
-.marketing-hero .card-light li {
-  color: rgba(6, 24, 28, 0.72);
+.marketing-methodology {
+  background: linear-gradient(135deg, rgba(4, 7, 20, 0.95), rgba(12, 30, 40, 0.95));
 }
 
-.marketing-methodology,
+.marketing-methodology .card-light {
+  background: rgba(22, 37, 58, 0.75);
+  color: var(--color-text);
+  border: 1px solid rgba(155, 255, 88, 0.18);
+  box-shadow: 0 25px 45px rgba(3, 10, 28, 0.45);
+}
+
 .marketing-services {
-  padding: 4.5rem 0;
-  background: var(--color-marketing-surface);
-  color: var(--color-text-dark);
+  background: var(--color-light-muted);
 }
 
-.marketing-methodology .section-title,
-.marketing-services .section-title {
-  color: #0a7c4c;
-}
-
-.marketing-methodology .section-subtitle,
-.marketing-services .section-subtitle,
-.marketing-methodology p,
-.marketing-services p {
-  color: rgba(5, 7, 14, 0.72);
-}
-
-.marketing-methodology .card-light,
 .marketing-services .card-light {
-  background: var(--color-marketing-surface-alt);
-  border: 1px solid rgba(51, 255, 153, 0.22);
-  color: var(--color-text-dark);
-  box-shadow: 0 25px 50px rgba(7, 64, 45, 0.1);
-}
-
-.marketing-methodology .card-light strong,
-.marketing-methodology .card-light h3,
-.marketing-services .card-light h3 {
-  color: var(--color-text-dark);
-}
-
-.marketing-methodology .card-light p,
-.marketing-methodology .card-light li,
-.marketing-services .card-light p {
-  color: rgba(6, 24, 28, 0.7);
+  background: var(--color-surface-alt);
+  border: 1px solid rgba(155, 255, 88, 0.15);
 }
 
 .marketing-services .card-light .badge {
   margin-bottom: 0.75rem;
-  background: rgba(51, 255, 153, 0.15);
-  color: #0a7c4c;
 }
 
 .marketing-pricing {
@@ -857,175 +747,31 @@ nav a:focus {
 }
 
 /* Desenvolvimento page accents */
-.highlight-neon {
-  color: var(--color-accent-orange);
-}
-
-.badge-neon {
-  background: rgba(255, 107, 0, 0.22);
-  color: rgba(255, 190, 140, 0.96);
-}
-
 .dev-hero {
-  background-color: var(--color-darker-bg);
-  background-image: radial-gradient(circle at 18% 22%, rgba(255, 107, 0, 0.22), transparent 55%),
-                    radial-gradient(circle at 80% -10%, rgba(36, 128, 255, 0.35), transparent 50%),
-                    var(--texture-tech-grid);
-  background-size: cover, 65%, 220px;
-  background-repeat: no-repeat, no-repeat, repeat;
-  position: relative;
-}
-
-.dev-hero .headline {
-  color: #ffffff;
-}
-
-.dev-hero .headline .highlight-neon {
-  text-shadow: 0 0 18px rgba(255, 107, 0, 0.45);
+  background: radial-gradient(circle at top right, rgba(255, 123, 48, 0.12), transparent 55%),
+              linear-gradient(135deg, rgba(2, 8, 25, 0.95), rgba(4, 18, 45, 0.95));
 }
 
 .dev-services {
-  background-color: #030915;
-  background-image: radial-gradient(circle at 10% 10%, rgba(36, 128, 255, 0.2), transparent 45%),
-                    radial-gradient(circle at 90% 90%, rgba(255, 107, 0, 0.18), transparent 55%),
-                    var(--texture-tech-grid);
-  background-size: cover, cover, 220px;
-  background-repeat: no-repeat, no-repeat, repeat;
-  padding: 4.5rem 0;
-}
-
-.dev-services .section-title {
-  color: #86b6ff;
-}
-
-.dev-services .section-title .highlight-neon {
-  color: var(--color-accent-orange);
-}
-
-.dev-services .section-subtitle {
-  color: rgba(198, 216, 255, 0.78);
+  background: linear-gradient(135deg, rgba(2, 7, 18, 0.95), rgba(3, 15, 35, 0.95));
 }
 
 .dev-services .card {
-  border: 1px solid rgba(255, 107, 0, 0.35);
-  background: rgba(6, 18, 45, 0.9);
-  position: relative;
-  overflow: hidden;
-}
-
-.dev-services .card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top left, rgba(255, 107, 0, 0.2), transparent 60%);
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-.dev-services .card:hover::after {
-  opacity: 1;
-}
-
-.dev-services .card h3 {
-  color: #ffffff;
-}
-
-.service-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
-  background: rgba(255, 107, 0, 0.14);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.2rem;
-  box-shadow: 0 18px 35px rgba(255, 107, 0, 0.18);
-}
-
-.service-icon svg {
-  width: 32px;
-  height: 32px;
-  stroke: var(--color-accent-orange);
-}
-
-.service-icon svg path,
-.service-icon svg rect,
-.service-icon svg circle,
-.service-icon svg line {
-  stroke: var(--color-accent-orange);
-}
-
-.dev-stack {
-  padding: 4.5rem 0;
-  background-color: #020713;
-  background-image: radial-gradient(circle at 12% 20%, rgba(36, 128, 255, 0.24), transparent 55%),
-                    radial-gradient(circle at 88% 80%, rgba(255, 107, 0, 0.24), transparent 60%),
-                    var(--texture-tech-grid);
-  background-size: cover, cover, 200px;
-  background-repeat: no-repeat, no-repeat, repeat;
-}
-
-.dev-stack .section-title {
-  color: #86b6ff;
-}
-
-.dev-stack .section-title .highlight-neon {
-  color: var(--color-accent-orange);
-}
-
-.tech-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tech-chip {
-  padding: 0.5rem 1.25rem;
-  border-radius: 999px;
-  border: 1px solid rgba(134, 182, 255, 0.35);
-  background: rgba(7, 22, 48, 0.8);
-  color: rgba(220, 232, 255, 0.9);
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
+  border: 1px solid rgba(47, 136, 255, 0.2);
+  background: rgba(5, 18, 45, 0.85);
 }
 
 .dev-process {
-  background-color: #030915;
-  background-image: radial-gradient(circle at 15% 0%, rgba(255, 107, 0, 0.2), transparent 50%),
-                    radial-gradient(circle at 85% 100%, rgba(36, 128, 255, 0.2), transparent 55%),
-                    var(--texture-tech-grid);
-  background-size: cover, cover, 220px;
-  background-repeat: no-repeat, no-repeat, repeat;
-}
-
-.dev-process .section-title {
-  color: #86b6ff;
+  background: linear-gradient(135deg, rgba(3, 10, 25, 0.95), rgba(3, 12, 32, 0.95));
 }
 
 .dev-process .process-step {
-  border-left: 3px solid rgba(255, 107, 0, 0.65);
+  border-left: 3px solid rgba(47, 136, 255, 0.65);
   padding-left: 1.25rem;
 }
 
-.dev-process .process-step strong {
-  color: var(--color-accent-orange);
-}
-
 .dev-cta {
-  background-color: #041025;
-  background-image: radial-gradient(circle at 20% 10%, rgba(36, 128, 255, 0.3), transparent 45%),
-                    radial-gradient(circle at 90% 90%, rgba(255, 107, 0, 0.25), transparent 55%),
-                    var(--texture-tech-grid);
-  background-size: cover, cover, 220px;
-  background-repeat: no-repeat, no-repeat, repeat;
-}
-
-.dev-cta .section-title {
-  color: #86b6ff;
-}
-
-.dev-cta .section-subtitle {
-  color: rgba(203, 218, 255, 0.82);
+  background: linear-gradient(135deg, rgba(11, 44, 110, 0.95), rgba(8, 28, 80, 0.95));
 }
 
 /* Sobre page accents */

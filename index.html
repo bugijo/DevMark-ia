@@ -43,13 +43,8 @@
             <h1 class="headline">Seu concorrente está crescendo online. E você?</h1>
             <p class="lead">A Auditoria Digital Gratuita revela os gargalos invisíveis e o roteiro para destravar novos clientes em até 14 dias. Tecnologia + estratégia para programar o crescimento.</p>
           </div>
-          <form class="hero-form" aria-labelledby="hero-form-title"
-            data-formsubmit="contato@devmarkia.com.br"
-            data-subject="Auditoria Digital - Homepage"
-            data-success="Recebemos sua solicitação! Retornaremos com o diagnóstico inicial em até 24h úteis."
-            data-error="Não foi possível enviar agora. Fale conosco pelo WhatsApp ou tente novamente.">
+          <form class="hero-form" aria-labelledby="hero-form-title">
             <h2 id="hero-form-title">Quero minha Auditoria Digital Gratuita</h2>
-            <input type="hidden" name="origem" value="Homepage - Auditoria Gratuita">
             <label for="nome">Nome completo</label>
             <input type="text" id="nome" name="nome" placeholder="Como devemos te chamar?" required>
             <label for="email">E-mail</label>
@@ -57,7 +52,6 @@
             <label for="canal">Site ou Instagram</label>
             <input type="text" id="canal" name="canal" placeholder="https:// ou @perfil" required>
             <button type="submit" class="btn-gradient">Quero minha auditoria gratuita</button>
-            <p class="form-feedback" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -99,16 +93,7 @@
             </article>
             <article class="department-card dev">
               <span class="badge">Departamento Tech</span>
-              <div class="department-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5">
-                  <rect x="6" y="10" width="36" height="24" rx="4"></rect>
-                  <line x1="6" y1="18" x2="42" y2="18"></line>
-                  <path d="M18 26l-4 4 4 4"></path>
-                  <path d="M30 26l4 4-4 4"></path>
-                  <circle cx="24" cy="32" r="2.8"></circle>
-                </svg>
-              </div>
-              <h3 class="highlight-neon">Desenvolvimento &amp; IA</h3>
+              <h3>Desenvolvimento &amp; IA</h3>
               <p>Código sob medida, automações inteligentes e IA aplicada para escalar operações, reduzir custos e gerar novas receitas.</p>
               <a href="desenvolvimento.html">Explorar soluções tech &rarr;</a>
             </article>
@@ -182,6 +167,8 @@
       </div>
     </footer>
   </div>
-  <script src="main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

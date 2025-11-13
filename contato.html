@@ -55,13 +55,8 @@
           <h2 class="section-title">Vamos qualificar seu projeto</h2>
           <p class="section-subtitle">Preencha o formulário para receber o plano personalizado e reservar sua Auditoria Digital Gratuita.</p>
           <div class="contact-grid">
-            <form class="contact-form" aria-labelledby="form-title"
-              data-formsubmit="contato@devmarkia.com.br"
-              data-subject="Lead Qualificado - Página de Contato"
-              data-success="Formulário enviado! Retornaremos com uma proposta personalizada em até 24h úteis."
-              data-error="Houve um erro ao enviar. Tente novamente ou chame no WhatsApp.">
+            <form class="contact-form" aria-labelledby="form-title">
               <h3 id="form-title">Conte sobre o seu negócio</h3>
-              <input type="hidden" name="origem" value="Página de Contato">
               <label for="nome">Nome completo</label>
               <input type="text" id="nome" name="nome" placeholder="Nome e sobrenome" required>
               <label for="email">E-mail corporativo</label>
@@ -85,7 +80,6 @@
               <label for="descricao">Conte o desafio que quer resolver</label>
               <textarea id="descricao" name="descricao" placeholder="Descreva cenário atual e metas desejadas"></textarea>
               <button type="submit" class="btn-gradient">Quero minha Auditoria</button>
-              <p class="form-feedback" role="status" aria-live="polite"></p>
             </form>
             <aside class="direct-contact">
               <h3>Contato direto</h3>
@@ -174,6 +168,8 @@
       </div>
     </footer>
   </div>
-  <script src="main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
