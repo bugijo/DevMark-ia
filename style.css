@@ -11,8 +11,8 @@
   --color-accent-green-dark: #64c847;
   --color-accent-blue: #1c3d73;
   --color-accent-blue-dark: #0d1f47;
-  --color-accent-orange: #f4a027;
-  --color-accent-orange-glow: rgba(244, 160, 39, 0.35);
+  --color-accent-orange: #FF6B00;
+  --color-accent-orange-glow: rgba(255, 107, 0, 0.35);
   --color-border: rgba(134, 181, 255, 0.14);
   --color-shadow: rgba(3, 10, 28, 0.55);
   --font-primary: 'Poppins', 'Segoe UI', sans-serif;
@@ -398,12 +398,12 @@ nav a:focus {
 }
 
 .department-card.dev {
-  background: linear-gradient(140deg, rgba(28, 61, 115, 0.85), rgba(8, 24, 56, 0.95));
-  border: 1px solid rgba(44, 122, 215, 0.35);
+  background: linear-gradient(140deg, rgba(255, 107, 0, 0.85), rgba(8, 24, 56, 0.95));
+  border: 1px solid rgba(255, 107, 0, 0.35);
 }
 
 .department-card.dev .badge {
-  background: rgba(244, 160, 39, 0.2);
+  background: rgba(255, 107, 0, 0.22);
   color: var(--color-accent-orange);
 }
 
@@ -430,7 +430,7 @@ nav a:focus {
 }
 
 .badge-orange {
-  background: rgba(244, 160, 39, 0.2);
+  background: rgba(255, 107, 0, 0.22);
   color: var(--color-accent-orange);
 }
 
@@ -637,6 +637,7 @@ nav a:focus {
 
 .highlight-orange {
   color: var(--color-accent-orange);
+  text-shadow: 0 0 12px var(--color-accent-orange-glow);
 }
 
 @media (max-width: 920px) {
@@ -680,7 +681,8 @@ nav a:focus {
 
 /* Marketing page accents */
 .marketing-hero {
-  background: linear-gradient(135deg, rgba(14, 34, 26, 0.95), rgba(18, 48, 34, 0.92));
+  background: radial-gradient(circle at 10% 50%, rgba(155, 255, 88, 0.18), transparent 52%),
+              linear-gradient(90deg, rgba(14, 34, 26, 0.95) 0%, rgba(18, 48, 34, 0.92) 65%);
   color: var(--color-text);
 }
 
@@ -698,7 +700,8 @@ nav a:focus {
 }
 
 .marketing-methodology {
-  background: linear-gradient(135deg, rgba(4, 7, 20, 0.95), rgba(12, 30, 40, 0.95));
+  background: radial-gradient(circle at 8% 50%, rgba(155, 255, 88, 0.12), transparent 55%),
+              linear-gradient(90deg, rgba(4, 7, 20, 0.96) 0%, rgba(12, 30, 40, 0.96) 65%);
 }
 
 .marketing-methodology .card-light {
@@ -709,7 +712,8 @@ nav a:focus {
 }
 
 .marketing-services {
-  background: var(--color-light-muted);
+  background: radial-gradient(circle at 6% 50%, rgba(155, 255, 88, 0.12), transparent 55%),
+              linear-gradient(90deg, rgba(12, 22, 37, 0.96) 0%, rgba(18, 30, 48, 0.96) 65%);
 }
 
 .marketing-services .card-light {
@@ -722,7 +726,8 @@ nav a:focus {
 }
 
 .marketing-pricing {
-  background: linear-gradient(135deg, rgba(14, 34, 26, 0.9), rgba(10, 24, 20, 0.95));
+  background: radial-gradient(circle at 10% 50%, rgba(155, 255, 88, 0.14), transparent 55%),
+              linear-gradient(90deg, rgba(14, 34, 26, 0.94) 0%, rgba(10, 24, 20, 0.96) 65%);
 }
 
 .marketing-pricing .section-title {
@@ -734,7 +739,8 @@ nav a:focus {
 }
 
 .marketing-cta {
-  background: linear-gradient(135deg, rgba(36, 96, 52, 0.9), rgba(24, 66, 38, 0.95));
+  background: radial-gradient(circle at 8% 50%, rgba(155, 255, 88, 0.12), transparent 55%),
+              linear-gradient(90deg, rgba(36, 96, 52, 0.94) 0%, rgba(24, 66, 38, 0.96) 65%);
   color: var(--color-text);
 }
 
@@ -746,32 +752,75 @@ nav a:focus {
   color: var(--color-text);
 }
 
+.marketing-cta .btn-gradient {
+  background: linear-gradient(135deg, var(--color-accent-green), #6ef7b3);
+  color: #021024;
+  box-shadow: 0 15px 35px rgba(51, 255, 153, 0.28);
+}
+
+.marketing-pricing .btn-outline {
+  color: var(--color-accent-green);
+  border-color: rgba(155, 255, 88, 0.55);
+}
+
+.marketing-pricing .btn-outline:hover,
+.marketing-pricing .btn-outline:focus {
+  border-color: rgba(155, 255, 88, 0.8);
+}
+
+.marketing-methodology .section-title,
+.marketing-services .section-title,
+.marketing-pricing .section-title,
+.marketing-cta .section-title {
+  color: var(--color-accent-green);
+}
+
 /* Desenvolvimento page accents */
 .dev-hero {
-  background: radial-gradient(circle at top right, rgba(255, 123, 48, 0.12), transparent 55%),
-              linear-gradient(135deg, rgba(2, 8, 25, 0.95), rgba(4, 18, 45, 0.95));
+  background:
+    radial-gradient(circle at 10% 50%, var(--color-accent-orange-glow), transparent 55%),
+    linear-gradient(90deg, rgba(2, 8, 25, 0.96) 0%, rgba(4, 18, 45, 0.96) 65%);
 }
 
 .dev-services {
-  background: linear-gradient(135deg, rgba(2, 7, 18, 0.95), rgba(3, 15, 35, 0.95));
+  background:
+    radial-gradient(circle at 10% 50%, var(--color-accent-orange-glow), transparent 55%),
+    linear-gradient(90deg, rgba(2, 8, 25, 0.96) 0%, rgba(4, 18, 45, 0.96) 65%);
 }
 
 .dev-services .card {
-  border: 1px solid rgba(47, 136, 255, 0.2);
+  border: 1px solid rgba(28, 61, 115, 0.35);
   background: rgba(5, 18, 45, 0.85);
+  box-shadow: 0 20px 45px rgba(28, 61, 115, 0.18);
 }
 
 .dev-process {
-  background: linear-gradient(135deg, rgba(3, 10, 25, 0.95), rgba(3, 12, 32, 0.95));
+  background:
+    radial-gradient(circle at 10% 50%, var(--color-accent-orange-glow), transparent 55%),
+    linear-gradient(90deg, rgba(2, 8, 25, 0.96) 0%, rgba(4, 18, 45, 0.96) 65%);
 }
 
 .dev-process .process-step {
-  border-left: 3px solid rgba(47, 136, 255, 0.65);
+  border-left: 3px solid rgba(28, 61, 115, 0.75);
   padding-left: 1.25rem;
 }
 
 .dev-cta {
-  background: linear-gradient(135deg, rgba(11, 44, 110, 0.95), rgba(8, 28, 80, 0.95));
+  background:
+    radial-gradient(circle at 10% 50%, var(--color-accent-orange-glow), transparent 55%),
+    linear-gradient(90deg, rgba(11, 44, 110, 0.96) 0%, rgba(8, 28, 80, 0.96) 65%);
+}
+
+.dev-cta .btn-gradient {
+  background: linear-gradient(135deg, var(--color-accent-orange), var(--color-accent-blue));
+  color: #021024;
+  box-shadow: 0 15px 35px var(--color-accent-orange-glow);
+}
+
+.dev-calculator {
+  background:
+    radial-gradient(circle at 10% 50%, var(--color-accent-orange-glow), transparent 55%),
+    linear-gradient(90deg, rgba(2, 8, 25, 0.96), rgba(4, 18, 45, 0.96));
 }
 
 /* Sobre page accents */
